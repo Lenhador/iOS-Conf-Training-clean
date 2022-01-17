@@ -24,6 +24,11 @@
 		26D0ADCD24FD228400A08AD7 /* SensitiveDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D0ADCC24FD228400A08AD7 /* SensitiveDataController.swift */; };
 		26D0ADD024FD296A00A08AD7 /* MyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D0ADCF24FD296A00A08AD7 /* MyLabel.swift */; };
 		DD7279DA7AA9DB1C0CD58362 /* Pods_Find_my_Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC48E2C60B92C3ADB1C63F45 /* Pods_Find_my_Data.framework */; };
+		E299ADA227956741009E4A74 /* mobsfscan.yml in Resources */ = {isa = PBXBuildFile; fileRef = E299AD9D27956741009E4A74 /* mobsfscan.yml */; };
+		E299ADA327956741009E4A74 /* github-actions-demo.yml in Resources */ = {isa = PBXBuildFile; fileRef = E299AD9E27956741009E4A74 /* github-actions-demo.yml */; };
+		E299ADA427956741009E4A74 /* gitleaks.yml in Resources */ = {isa = PBXBuildFile; fileRef = E299AD9F27956741009E4A74 /* gitleaks.yml */; };
+		E299ADA527956741009E4A74 /* MobSF.yml in Resources */ = {isa = PBXBuildFile; fileRef = E299ADA027956741009E4A74 /* MobSF.yml */; };
+		E299ADA627956741009E4A74 /* dependency-check.yml in Resources */ = {isa = PBXBuildFile; fileRef = E299ADA127956741009E4A74 /* dependency-check.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +55,11 @@
 		4616294E7E7D0CD71CAA48FB /* Pods-iOS-Shack-v2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Shack-v2.release.xcconfig"; path = "Target Support Files/Pods-iOS-Shack-v2/Pods-iOS-Shack-v2.release.xcconfig"; sourceTree = "<group>"; };
 		4CDA97DA42FA76BAF57770B7 /* Pods-Find_my_Data.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Find_my_Data.release.xcconfig"; path = "Target Support Files/Pods-Find_my_Data/Pods-Find_my_Data.release.xcconfig"; sourceTree = "<group>"; };
 		CC48E2C60B92C3ADB1C63F45 /* Pods_Find_my_Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Find_my_Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E299AD9D27956741009E4A74 /* mobsfscan.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = mobsfscan.yml; sourceTree = "<group>"; };
+		E299AD9E27956741009E4A74 /* github-actions-demo.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = "github-actions-demo.yml"; sourceTree = "<group>"; };
+		E299AD9F27956741009E4A74 /* gitleaks.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = gitleaks.yml; sourceTree = "<group>"; };
+		E299ADA027956741009E4A74 /* MobSF.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = MobSF.yml; sourceTree = "<group>"; };
+		E299ADA127956741009E4A74 /* dependency-check.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = "dependency-check.yml"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +77,7 @@
 		26D0ADA324FC841B00A08AD7 = {
 			isa = PBXGroup;
 			children = (
+				E299AD9B27956741009E4A74 /* .github */,
 				2660B43927942CD8004A90AE /* secret */,
 				262F4E8B278C65CE0007DC97 /* .github */,
 				26D0ADAE24FC841B00A08AD7 /* iOS-Shack-v2 */,
@@ -120,6 +131,26 @@
 				CC48E2C60B92C3ADB1C63F45 /* Pods_Find_my_Data.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E299AD9B27956741009E4A74 /* .github */ = {
+			isa = PBXGroup;
+			children = (
+				E299AD9C27956741009E4A74 /* workflows */,
+			);
+			path = .github;
+			sourceTree = "<group>";
+		};
+		E299AD9C27956741009E4A74 /* workflows */ = {
+			isa = PBXGroup;
+			children = (
+				E299AD9D27956741009E4A74 /* mobsfscan.yml */,
+				E299AD9E27956741009E4A74 /* github-actions-demo.yml */,
+				E299AD9F27956741009E4A74 /* gitleaks.yml */,
+				E299ADA027956741009E4A74 /* MobSF.yml */,
+				E299ADA127956741009E4A74 /* dependency-check.yml */,
+			);
+			path = workflows;
 			sourceTree = "<group>";
 		};
 		EF98644EB0382FCFBFF5E186 /* Pods */ = {
@@ -195,9 +226,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E299ADA227956741009E4A74 /* mobsfscan.yml in Resources */,
 				26D0ADBC24FC841F00A08AD7 /* LaunchScreen.storyboard in Resources */,
+				E299ADA527956741009E4A74 /* MobSF.yml in Resources */,
+				E299ADA327956741009E4A74 /* github-actions-demo.yml in Resources */,
 				26D0ADC424FD1AF600A08AD7 /* appstore.png in Resources */,
 				2660B43A27942CD9004A90AE /* secret in Resources */,
+				E299ADA427956741009E4A74 /* gitleaks.yml in Resources */,
+				E299ADA627956741009E4A74 /* dependency-check.yml in Resources */,
 				26D0ADB924FC841F00A08AD7 /* Assets.xcassets in Resources */,
 				26D0ADB724FC841B00A08AD7 /* Main.storyboard in Resources */,
 				262F4E8C278C65CF0007DC97 /* .github in Resources */,
